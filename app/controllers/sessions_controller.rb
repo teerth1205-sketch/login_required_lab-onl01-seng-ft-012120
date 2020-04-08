@@ -17,7 +17,7 @@ class SessionsController < ApplicationController
     if current_user
     session.delete :name
   else
-    current_user
+  
   end 
   end 
 
