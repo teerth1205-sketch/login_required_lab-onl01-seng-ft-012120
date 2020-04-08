@@ -5,11 +5,15 @@ class SessionsController < ApplicationController
   end 
   
   def create
-    
+    if params[:name].nil? || params[:name].empty?
+      redirect_to '/new'
+    else 
+      current_user = params[:name]
+    end 
   end 
   
   def destroy
-    
+    session.d
   end 
   
   
