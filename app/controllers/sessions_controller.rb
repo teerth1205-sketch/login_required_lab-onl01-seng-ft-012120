@@ -14,7 +14,11 @@ class SessionsController < ApplicationController
   end 
   
   def destroy
-    session.delete :name 
+    if current_user
+    session.delete :name
+  else
+    current_user
+  end 
   end 
 
   
