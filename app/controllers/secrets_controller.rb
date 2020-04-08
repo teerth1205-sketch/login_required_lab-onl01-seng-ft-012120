@@ -1,6 +1,6 @@
 class SecretsController < ApplicationController
   
-  before_action :require_login
+  before_action :current_user
   
   def show 
    if current_user.nil?
