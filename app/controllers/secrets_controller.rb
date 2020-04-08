@@ -8,7 +8,5 @@ class SecretsController < ApplicationController
    end 
   end 
   
-  private
-  
   
 end 
